@@ -261,12 +261,12 @@ Nil to use font supports ligatures."
     ("#+TAGS:" . ?🏷)
     ("#+TITLE:" . ?📓)
 
-    ("#+BEGIN_SRC" . ?✎)
-    ("#+END_SRC" . ?□)
-    ("#+BEGIN_QUOTE" . ?»)
-    ("#+END_QUOTE" . ?«)
-    ("#+HEADERS" . ?☰)
-    ("#+RESULTS:" . ?💻))
+    ("#+begin_src" . ?✎)
+    ("#+end_src" . ?□)
+    ("#+begin_quote" . ?»)
+    ("#+end_quote" . ?«)
+    ("#+headers" . ?☰)
+    ("#+results:" . ?💻))
   "Alist of symbol prettifications for `org-mode'."
   :group 'centaur
   :type '(alist :key-type string :value-type (choice character sexp)))

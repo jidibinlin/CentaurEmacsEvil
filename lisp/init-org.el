@@ -179,7 +179,8 @@ prepended to the element after the #+HEADER: tag."
     (use-package org-superstar
       :if (and (display-graphic-p) (char-displayable-p ?⚫))
       :hook (org-mode . org-superstar-mode)
-      :init (setq org-superstar-headline-bullets-list '("⚫" "⚫" "⚫" "⚫"))))
+      :init (setq org-superstar-headline-bullets-list '( "◉" "☯" "○" "☯" "✸" "☯" "✿" "☯" "✜" "☯" "◆" "☯" "▶"))
+      ))
 
   (use-package org-fancy-priorities
     :diminish

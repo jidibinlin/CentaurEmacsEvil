@@ -639,11 +639,16 @@ This is for use in `ivy-re-builders-alist'."
       (advice-add #'ivy-posframe--display :after #'my-ivy-posframe--prettify-buffer)
 
       ;; Adjust the postion
-      (defun ivy-posframe-display-at-frame-center-near-bottom (str)
-        (ivy-posframe--display str #'posframe-poshandler-frame-center-near-bottom))
-      (setf (alist-get t ivy-posframe-display-functions-alist)
-            #'ivy-posframe-display-at-frame-center-near-bottom))))
+      ;; (defun ivy-posframe-display-at-frame-top-center (str)
+      ;;   (ivy-posframe--display str #'posframe-poshandler-window-top-center))
+      ;; (setf (alist-get t ivy-posframe-display-functions-alist)
+      ;;       #'ivy-posframe-display-at-frame-top-center))))
 
+      ;;Adjust the postion
+      (defun ivy-posframe-display-at-frame-center (str)
+        (ivy-posframe--display str #'posframe-poshandler-frame-center))
+      (setf (alist-get t ivy-posframe-display-functions-alist)
+            #'ivy-posframe-display-at-frame-center))))
 (provide 'init-ivy)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
