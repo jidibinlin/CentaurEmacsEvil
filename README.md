@@ -85,12 +85,8 @@ Recommend to use [Centaur Dotfiles](https://github.com/seagle0128/dotfiles).
 
 ``` shell
 mv ~/.emacs.d ~/.emacs.d.bak
-git clone --depth 1 https://github.com/seagle0128/.emacs.d.git ~/.emacs.d
+git clone --depth 1 https://github.com/jidibinlin/CentaurEmacsEvil ~/.emacs.d
 ```
-
-or download the [zip
-package](https://github.com/seagle0128/.emacs.d/archive/master.zip) directly and
-extract to `~/.emacs.d`.
 
 Then start Emacs. Wait for a while to install packages at the first startup.
 Enjoy! :smile:
