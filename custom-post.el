@@ -1,0 +1,1 @@
+/home/qibin/.centaurCustom/custom-post.el

@@ -1,0 +1,1 @@
+/home/qibin/.centaurCustom/rime.el
