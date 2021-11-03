@@ -86,6 +86,7 @@ Recommend to use [Centaur Dotfiles](https://github.com/seagle0128/dotfiles).
 ``` shell
 mv ~/.emacs.d ~/.emacs.d.bak
 git clone --depth 1 https://github.com/jidibinlin/CentaurEmacsEvil ~/.emacs.d
+git clone https://github.com/jidibinlin/centaurCustom ~/.centaurCustom
 ```
 
 Then start Emacs. Wait for a while to install packages at the first startup.
