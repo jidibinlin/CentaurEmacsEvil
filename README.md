@@ -205,6 +205,7 @@ For the personal configurations, you could put to `~/.emacs.d/custom-post.org`
 | search file content in current directory | normal mode | SPC s      |
 | ivy-switch-buffer                        | normal mode | SPC b b    |
 | navigate window i(a number)              | normal mode | SPC i      |
+
 ## Screenshots
 
 ![Dashboard](https://user-images.githubusercontent.com/140797/97093362-c793b000-167d-11eb-924a-1892c6e95b8a.png

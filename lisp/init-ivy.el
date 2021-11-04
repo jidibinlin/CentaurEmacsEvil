@@ -568,7 +568,7 @@ This is for use in `ivy-re-builders-alist'."
              'centaur-load-theme
              '(:columns
                ((all-the-icons-ivy-rich-theme-icon)
-                (ivy-rich-candidate))
+                (ivy-ric-candidate))
                :delimiter "\t"))
   (all-the-icons-ivy-rich-reload))
 
@@ -649,6 +649,10 @@ This is for use in `ivy-re-builders-alist'."
         (ivy-posframe--display str #'posframe-poshandler-frame-center))
       (setf (alist-get t ivy-posframe-display-functions-alist)
             #'ivy-posframe-display-at-frame-center))))
+;; (defun ivy-posframe-display-at-frame-center-near-bottom (str)
+;;   (ivy-posframe--display str #'posframe-poshandler-frame-center-near-bottom))
+;; (setf (alist-get t ivy-posframe-display-functions-alist)
+;;       #'ivy-posframe-display-at-frame-center-near-bottom))))
 (provide 'init-ivy)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
