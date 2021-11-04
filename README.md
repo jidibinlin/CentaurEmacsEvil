@@ -195,6 +195,16 @@ For the personal configurations, you could put to `~/.emacs.d/custom-post.org`
 | `elfeed-hydra`           | elfeed                | `?`               | Actions for RSS reader `elfeed`      |
 | `xwidget-hydra`          | xwidget-webkit-mode   | `?`               | Actions for embedded webkit browser  |
 
+## additional keybindings
+
+| Description                              | Scope       | Keybinding |
+|------------------------------------------|-------------|------------|
+| search file in current directory         | normal mode | SPC f      |
+| search file in current project           | normal mode | SPC p f    |
+| search file content in current project   | normal mode | SPC p s    |
+| search file content in current directory | normal mode | SPC s      |
+| ivy-switch-buffer                        | normal mode | SPC b b    |
+| navigate window i(a number)              | normal mode | SPC i      |
 ## Screenshots
 
 ![Dashboard](https://user-images.githubusercontent.com/140797/97093362-c793b000-167d-11eb-924a-1892c6e95b8a.png
