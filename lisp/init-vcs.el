@@ -110,23 +110,10 @@
         `(transient-posframe-border ((t (:background ,(face-foreground 'font-lock-comment-face nil t))))))))
 
     (with-no-warnings
-<<<<<<< HEAD
-      (defun my-transient-posframe--prettify-frame ()
-        (with-current-buffer (get-buffer-create transient--buffer-name)
-          (when posframe--frame
-            (goto-char (point-min))
-            (insert (propertize "\n" 'face '(:height 0.3)))
-            (goto-char (point-max))
-            (delete-char -3)          ; delete separate
-            (insert (propertize "\n" 'face '(:height 0.5)))
-            (posframe--set-frame-size '(posframe--frame 500 500 1000 1000 500 500)))))
-      (advice-add #'transient--show :after #'my-transient-posframe--prettify-frame))))
-=======
       (defun my-transient-posframe--hide ()
         "Hide transient posframe."
         (posframe-hide transient--buffer-name))
       (advice-add #'transient-posframe--delete :override #'my-transient-posframe--hide))))
->>>>>>> 7f7d6579cd3b4e8940ecbb9aab36b68ea79b74ef
 
 ;; Walk through git revisions of a file
 (use-package git-timemachine
